@@ -10,6 +10,9 @@ import { MatSelectModule } from '@angular/material/select';
 import { HomeComponent } from './component/home/home.component';
 import { ToastrModule } from 'ngx-toastr';
 import { BingoComponent } from './component/bingo/bingo.component';
+import { TableroComponent } from './component/tablero/tablero.component';
+import {MatGridListModule} from '@angular/material/grid-list';
+import {MatTableModule} from '@angular/material/table';
 
 
 
@@ -17,7 +20,8 @@ import { BingoComponent } from './component/bingo/bingo.component';
   declarations: [
     AppComponent,
     HomeComponent,
-    BingoComponent
+    BingoComponent,
+    TableroComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +35,9 @@ import { BingoComponent } from './component/bingo/bingo.component';
         timeOut: 3000,
         positionClass: 'toast-bottom-right',
       }
-    )
+    ),
+    MatGridListModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -32,9 +32,13 @@ export class HomeComponent implements OnInit {
       { name: 'B', id: 7 },
       { name: 'X', id: 8 },
       { name: 'Cruz', id: 9 },
+      { name: 'Cuadrado', id: 10 },
+      { name: 'U', id: 11 },
     ]
 
     this.selectedValue = this.gameModes[0].id;
+
+  
 
   }
 
